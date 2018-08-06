@@ -25,8 +25,9 @@ fetch("https://anapioficeandfire.com/api/houses")
 })
 .then(renderHouses)
 }
+
 function renderHouses(json) {
-  const div = document.querySelector('house')
+  const div = document.querySelector('#house')
   json.forEach(house => {
     const h2 = document.createElement('h2')
     h2.innerHTML = `<h2>${house.name}</h2>`
