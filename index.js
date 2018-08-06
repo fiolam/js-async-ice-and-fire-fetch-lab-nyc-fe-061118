@@ -27,11 +27,11 @@ fetch("https://anapioficeandfire.com/api/houses")
 }
 
 function renderHouses(json) {
-  const house = document.querySelector('div')
+  const div = document.querySelector('div')
   json.forEach(house => {
     const h2 = document.createElement('h2')
     h2.innerHTML = `<h2>${house.name}</h2>`
-    house.appendChild(h2)
+    div.appendChild(h2)
   })
 }
 
