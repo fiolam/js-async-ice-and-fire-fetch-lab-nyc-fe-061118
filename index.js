@@ -8,6 +8,10 @@ return response.json();
 .then(renderBooks)
 }
 
+function fetchHouses() {
+  
+}
+
 
 function renderBooks(json) {
   const main = document.querySelector('main')
